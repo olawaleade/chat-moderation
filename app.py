@@ -26,21 +26,3 @@ def chat():
 
 if __name__ == '__main__':
     app.run(debug = True)
-
-
-"""
-@app.route('/webclient')
-def index():
-    return render_template('index.html')
-
-@app.route('/results', methods=['POST'])
-def results():
-    input_data = request.form['text']
-    api_url = 'https://xyr7no9012.execute-api.ap-northeast-1.amazonaws.com/chatapi/chat/'
-    response = requests.get(api_url, params={'text': input_data})
-    data = response.json()
-    return render_template('results.html', data=data)
-
-if __name__ == '__main__':
-    app.run(debug=False)
-"""
